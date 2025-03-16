@@ -32,6 +32,8 @@ header {
   height: max-content;
   background: white;
   flex-direction: row;
+
+  margin-right: 10px;
 }
 
 .logo {
