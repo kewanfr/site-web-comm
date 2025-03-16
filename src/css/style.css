@@ -3,13 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 
 body,
 html {
-  width: 100%;
-  height: 100%;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /* background: $red; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 /* Navbar */
@@ -97,15 +109,107 @@ header {
   font-size: 1.2em;
   margin-bottom: 30px;
 }
-
-.cta-button {
-  display: inline-block;
+/* .cta-button {
+  background: transparent;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
   padding: 10px 20px;
-  background: #fff;
-  color: #333;
+  font-size: 1.2em;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  transition: border-width 0.5s ease, border-color 0.5s ease;
+}
+
+.cta-button:hover {
+  border-width: 2px 2px 2px 2px;
+  border-color: white;
+  color: #fff;
+} */
+
+.hero-overlay {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  /* display: block; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  /* margin: 0 0 2em; */
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 20px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+
+  /* texte non centré */
+  
+  justify-self: center;
+  align-self: center;
+  /* display: flex;
+  margin: auto; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+  }
+}
+
+.cta-button {
+  /* background: darken($red, 1.5%); */
+  background: transparent;
+  font-weight: 200;
+
+}
+.cta-button svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cta-button rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.cta-button:hover {
+  /* background: rgba($red, 0); */
+  /* background: darken(tra,); */
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.brand-title {
+  color: #0085cc;
+  font-size: 1.9rem;
 }
 
 /* Section de contenu */
