@@ -108,6 +108,8 @@ header {
 .hero-overlay p {
   font-size: 1.2em;
   margin-bottom: 30px;
+  text-align: center;
+
 }
 /* .cta-button {
   background: transparent;
@@ -152,7 +154,7 @@ header {
   width: 100%;
 
   /* texte non centré */
-  
+
   justify-self: center;
   align-self: center;
   /* display: flex;
@@ -227,4 +229,78 @@ header {
 /* Pour éviter que le contenu soit caché sous la navbar */
 body {
   padding-top: 80px;
+}
+
+/* Section de contenu */
+.content-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style des blocs de contenu avec alternance gauche/droite */
+.content-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.content-block.left {
+  flex-direction: row;
+}
+
+.content-block.right {
+  flex-direction: row-reverse;
+}
+
+/* Boîtes contenant les images */
+.image-box {
+  width: 220px;
+  height: 160px;
+  border: 3px solid blue;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 255, 0.3);
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Style des paragraphes */
+p {
+  flex: 1;
+  text-align: justify;
+  margin: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Responsive Design : empilement en colonne pour petits écrans */
+@media (max-width: 768px) {
+  .content-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  p {
+    text-align: center;
+  }
 }
