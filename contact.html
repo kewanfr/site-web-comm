@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histoire Dassault</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <link href="src/css/home.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="src/css/contact.css" />
   </head>
   <body>
     <header>
@@ -24,31 +26,78 @@
     </header>
 
     <section class="hero">
-      <video autoplay muted loop class="video-bg">
-        <source src="src/media/videos/hero.webm" type="video/webm" />
-        Votre navigateur ne supporte pas la vidéo.
+      <video autoplay class="video-bg" loop muted>
+          <source src="src/media/videos/hero.webm" type="video/webm"/>
+          <source src="src/media/videos/hero.mp4" type="video/mp4"/>
+          Votre navigateur ne supporte pas la vidéo.
       </video>
       <div class="hero-overlay">
-        <h1>Bienvenue sur le site de Dassault</h1>
+          <h2 class="brand-title">Dassault Aviation</h2>
+          <h1 class="page-title">Contactez-nous</h1>
+          <!-- <a href="#more" class="cta-button">Découvrir</a> -->
+          <a class="btn cta-button" href="#more">
+              <svg>
+                  <rect fill="none" height="100%" width="100%" x="0" y="0"/>
+              </svg>
+              Contact
+          </a>
+      </div>
+  </section>
+
+  <section id="more" class="content-section">
+    <div>
+      <h2>Remplissez le formulaire suivant pour nous envoyer un message</h2>
+    </div>
+    <div class="rules">
+      <h4>Les champs suivient d'un astérisque (*) sont obligatoires</h4>
+    </div>
+  </section>
+
+  <section>
+    <div class="overlay">
+      <form>
+        <div class="row">
+            <div>
+                <label for="prenom">Prénom*</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div>
+                <label for="nom">Nom*</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+        </div>
+    
+        <label for="courriel">Courriel*</label>
+        <input type="email" id="courriel" name="courriel" required>
+    
+        <label for="pays">Pays</label>
+        <select id="pays" name="pays">
+            <option value="">Sélectionner un pays</option>
+            <option value="france">France</option>
+            <option value="canada">Canada</option>
+            <option value="belgique">Belgique</option>
+            <option value="suisse">Suisse</option>
+            <option value="autre">Autre</option>
+        </select>
+    
+        <label for="sujet">Sujet*</label>
+        <input type="text" id="sujet" name="sujet" required>
+    
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    
+        <button type="submit">Envoyer</button>
+    </form>
+        <!--<h1>Bienvenue sur le site de Dassault</h1>
         <p>Découvrez notre histoire, nos produits et actualités</p>
-        <a href="#more" class="cta-button">En savoir plus</a>
-      </div>
-    </section>
+        <a href="#more" class="cta-button">En savoir plus</a>-->
+    </div>
+  </section>
 
-    <section id="more" class="content-section">
-      <div class="container">
-        <h2>Notre Histoire</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nemo odio
-          mollitia optio aliquid consectetur totam iusto, temporibus quia in iure veritatis...
-        </p>
-      </div>
-    </section>
-
-    <section id="contact-info" class="content-section">
-      <div class="container">
-        <h2>Contactez-nous</h2>
-        <p>9 ROND-POINT DES CHAMPS ELYSEES-MARCEL DASSAULT MARCEL DASSAULT, 75008 PARIS France</p>
+    <section id="contact-info" class="contact-section">
+      <div class="contact">
+        <h2>Informations supplémentaires</h2>
+        <p>Adresse : 123 Rue Fictive, 75000 Paris, France</p>
         <p>Téléphone : +33 1 23 45 67 89</p>
         <p>Email : contact@dassault.com</p>
       </div>

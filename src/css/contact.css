@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.content-section {
+    text-align: center;
+}
+
+.contact-section {
+    padding: 80px 20px;
+    background-color: #324B6B;
+    color: #fff;
+}
+
+.contact {
+    text-align: left;
+}
+
+.rules {
+    margin: 10px 0 0;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row div {
+    flex: 1;
+}
+
+button {
+    background-color: #b8b8b8;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 20px;
+}
+
+button:hover {
+    background-color: #324B6B;
+    color: white;
+}
