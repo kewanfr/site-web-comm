@@ -225,7 +225,7 @@ nav.stroke ul li a:hover:after {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 /* Pour éviter que le contenu soit caché sous la navbar */
@@ -300,6 +300,13 @@ body {
 }
 
 .site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.site-footer .containerfooter {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
