@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histoire Dassault</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <!-- <link rel="stylesheet" href="src/css/home.css" /> -->
     <link rel="stylesheet" href="src/css/products.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <!-- <div class="logo"> -->
-          <img src="src/media/img/logo.svg" class="logo" alt="Logo Dassault" />
-        <!-- </div> -->
+      <nav class="navbar stroke">
+        <img
+          alt="Logo Dassault"
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/fr/d/d0/Logo_Dassault_Aviation_2020.svg"
+        />
         <ul class="nav-links">
           <li><a href="/">Accueil</a></li>
-          <li><a href="/histoire.html">Histoire</a></li>
           <li><a href="/products.html">Produits</a></li>
           <li><a href="/news.html">Actualités</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -24,29 +26,187 @@
       </nav>
     </header>
 
+    <section class="hero">
+      <!-- image avec texte par dessus -->
+      <img
+        src="src/media/img/store.jpg"
+        alt="Histoire Dassault"
+        class="store-image"
+      />
+      <div class="hero-overlay">
+        <h2 class="brand-title">Dassault Store</h2>
+        <h1 class="page-title">Découvrez tous nos produits</h1>
+        <!-- <a href="#more" class="cta-button">Découvrir</a> -->
+        <a class="btn cta-button" href="#more">
+          <svg>
+            <rect fill="none" height="100%" width="100%" x="0" y="0" />
+          </svg>
+          Découvrir
+        </a>
+      </div>
+    </section>
+    <section class="products-section">
+      <div class="container">
+        <h2>Nos Produits</h2>
+        <br />
+        <hr />
+        <br />
+        <div class="products-list">
+          <div class="product-item">
+            <img
+              alt="Maquette Rafale"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/R/a/RafaleCRafaleSoloDisplay2023172ScaleModel-65661-7.jpg"
+            />
+            <div class="product-content">
+              <h3>Maquette Rafale</h3>
+              <p>
+                Maquette détaillée de l'avion de chasse Rafale, emblème de
+                Dassault Aviation.
+              </p>
+              <p class="price">Prix : 49,99 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/maquette-rafale-c-rafale-solo-display-2023-echelle-1-72-eme-112300.html">Acheter</a>
+            </div>
+          </div>
 
-    <main class="container">
+          <div class="product-item">
+            <img
+              alt="Maquette Falcon"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/F/a/Falcon10X1200DragonYear-63918-2.jpg"
+            />
+            <div class="product-content">
+              <h3>Maquette Falcon</h3>
+              <p>
+                Reproduction fidèle du jet d'affaires Falcon, symbole de luxe
+                et de performance.
+              </p>
+              <p class="price">Prix : 59,99 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/maquette-falcon-10x-edition-limitee-1-200-eme-metal-109543.html">Acheter</a>
+            </div>
+          </div>
 
-      <section class="hero">
-          <h1>Bienvenue sur le site de Dassault</h1>
-          <p>Découvrez notre histoire, nos produits et actualités</p>
-          <a href="#more" class="cta-button">En savoir plus</a>
-      </section>
-  
-      <section id="more" class="content-section">
-        <div class="container">
-          <h2>Notre Histoire</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nemo odio
-            mollitia optio aliquid consectetur totam iusto, temporibus quia in iure veritatis...
-          </p>
+          <div class="product-item">
+            <img
+              alt="Peluche Rafale"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/R/a/RafaleSoftToy-46317-1.jpg"
+            />
+            <div class="product-content">
+              <h3>Peluche Rafalou</h3>
+              <p>
+                Peluche douce et amusante en forme d'avion Rafale, parfaite
+                pour les enfants.
+              </p>
+              <p class="price">Prix : 24,99 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/peluche-rafale-45968.html">Acheter</a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              alt="Peluche Falcon"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/F/a/FalconSoftToyGiftSet-46319-1_1.jpg"
+            />
+            <div class="product-content">
+              <h3>Peluche Falconou</h3>
+              <p>
+                Peluche adorable représentant le jet d'affaires Falcon, idéale
+                pour tous les âges.
+              </p>
+              <p class="price">Prix : 29,99 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/peluche-falcon-45970.html">Acheter</a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              alt="Maquette Mirage IIIS Swiss Air Force"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/S/w/SwissAirForceMirageIIISModelinConstructionBricks-60374-5_1.jpg"
+            />
+            <div class="product-content">
+              <h3>Maquette Mirage IIIS Swiss Air Force</h3>
+              <p>
+                Le modèle Mirage IIIS à l’échelle 1:48 sous la licence originale de Dassault Aviation a été entièrement développé à partir de 453 briques de construction COBI et est destiné à la fois au jeu et à l’affichage.
+              </p>
+              <p class="price">Prix : 44,90 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/maquette-mirage-iiis-swiss-air-force-en-briques-de-construction-104463.html">Acheter</a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              alt="Tee-shirt enfant « Mon rêve c’est voler » vert"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/M/o/Monr_vecestvolerKidsGreenTshirtage1214-49366-1_2.jpg"
+            />
+            <div class="product-content">
+              <h3>Tee-shirt enfant « Mon rêve c’est voler » vert</h3>
+              <p>
+                À la recherche d’un tee-shirt qui fait rêver ? Notre collection de tee-shirts personnalisés, avec tous les avions Dassault Aviation (du Rafale, à la gamme Falcon, en passant par les Mirage ainsi que tous nos avions historiques) fera plaisir aux enfants comme aux adultes.
+              </p>
+              <p class="price">Prix : 15,82 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/tee-shirt-enfant-mon-reve-c-est-voler-vert-49366.html">Acheter</a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              alt="Bavoir bébé Mirage 2000"
+              class="product-img"
+              src="https://www.thestore-dassault-aviation.com/media/catalog/product/cache/b85f3e82f0cd427ed18598db6a1ab589/M/i/Mirage2000BabyBib-46338-1_1.jpg"
+            />
+            <div class="product-content">
+              <h3>Bavoir bébé Mirage 2000</h3>
+              <p>
+Découvrez notre adorable bavoir Mirage 2000, doux et absorbant, pour protéger votre bébé lors de ses premiers repas et éviter les débordements pendant le « ravitaillement en vol ».
+              </p>
+              <p class="price">Prix : 11,27 €</p>
+              <a class="buy-button" target="_blank" href="https://www.thestore-dassault-aviation.com/fr/bavoir-bebe-mirage-2000-46047.html">Acheter</a>
+            </div>
+          </div>
+
+          
+
+          <div class="product-item">
+            <img
+              alt="Château DASSAULT 2015"
+              class="product-img"
+              src="https://aries-vins.com/4660-pdt_540/chateau-dassault-2015.jpg"
+            />
+            <div class="product-content">
+              <h3>Château DASSAULT 2015</h3>
+              <p>
+"La sècheresse de 2015 profite parfaitement à ce cru qui de fait offre un vin rond, juteux, savoureux avec un corps gras et puissant. Finale pleine de goût. Tanin bien enveloppé. Très bonne longueur. L'élevage en dira probablement plus et à la hausse." 16/20 - 90/100 - J.M QUARIN Avril 2016
+
+              </p>
+              <p class="price">Prix : 576,00 €</p>
+              <a class="buy-button" target="_blank" href="https://aries-vins.com/chateau-dassault/3355-chateau-dassault-2015.html">Acheter</a>
+            </div>
+          </div>
+
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
     <script src="src/js/script.js"></script>
-    <footer>
-      <p>Copyright © 2025 Histoire d'assault</p>
-  </footer>
+
+    <footer class="site-footer">
+      <div class="containerfooter">
+        <ul class="footer-links">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/histoire.html">Histoire</a></li>
+          <li><a href="/products.html">Produits</a></li>
+          <li><a href="/news.html">Actualités</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/career.html">Nous rejoindre</a></li>
+        </ul>
+        <p class="footer-copy">
+          © 2025 Dassault Aviation. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
