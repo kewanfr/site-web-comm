@@ -1,0 +1,90 @@
+/* Styles spécifiques pour la page Actualités */
+
+/* Section News */
+.news-section {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.news-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style des articles en bloc */
+.news-item {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Image de l'article */
+.news-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Contenu de l'article */
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 1.6em;
+    color: #0085cc;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.news-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Bouton "Lire la suite" */
+.read-more {
+    text-decoration: none;
+    color: #0085cc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #005f99;
+}
+
+/* Affichage en ligne pour écrans plus larges */
+@media (min-width: 768px) {
+    .news-item {
+        flex-direction: row;
+    }
+
+    .news-img {
+        width: 40%;
+        max-height: 250px;
+    }
+
+    .news-content {
+        width: 60%;
+        padding: 20px;
+    }
+}

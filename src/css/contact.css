@@ -1,64 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+.contact-section {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    color: #333;
 }
 
-.content-section {
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.contact-section {
-    padding: 80px 20px;
-    background-color: #324B6B;
-    color: #fff;
+.contact-section h2 {
+    font-size: 2em;
+    color: #0085cc;
+    margin-bottom: 30px;
 }
 
-.contact {
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
-.rules {
-    margin: 10px 0 0;
-}
-
-form {
-    width: 50%;
-    margin: auto;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.row {
+.form-group {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
 }
 
-.row div {
-    flex: 1;
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-button {
-    background-color: #b8b8b8;
-    color: rgb(0, 0, 0);
+.form-group input,
+.form-group textarea {
     padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin: 0 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
 }
 
-button:hover {
-    background-color: #324B6B;
-    color: white;
+.submit-btn {
+    background: #0085cc;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #005f99;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    color: #0085cc;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1em;
 }

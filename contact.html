@@ -1,111 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Histoire Dassault</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link href="src/css/home.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="src/css/contact.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <!-- <div class="logo"> -->
-          <img src="src/media/img/logo.svg" class="logo" alt="Logo Dassault" />
-        <!-- </div> -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact - Dassault Aviation</title>
+    <link href="src/css/style.css" rel="stylesheet"/>
+    <link href="src/css/contact.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <img alt="Logo Dassault" class="logo" src="src/media/img/logo.svg">
         <ul class="nav-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/histoire.html">Histoire</a></li>
-          <li><a href="/products.html">Produits</a></li>
-          <li><a href="/news.html">Actualités</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/career.html">Nous rejoindre</a></li>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/histoire.html">Histoire</a></li>
+            <li><a href="/products.html">Produits</a></li>
+            <li><a href="/news.html">Actualités</a></li>
+            <li><a href="/career.html">Nous rejoindre</a></li>
+            <li><a class="active" href="/contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <video autoplay class="video-bg" loop muted>
-          <source src="src/media/videos/hero.webm" type="video/webm"/>
-          <source src="src/media/videos/hero.mp4" type="video/mp4"/>
-          Votre navigateur ne supporte pas la vidéo.
-      </video>
-      <div class="hero-overlay">
-          <h2 class="brand-title">Dassault Aviation</h2>
-          <h1 class="page-title">Contactez-nous</h1>
-          <!-- <a href="#more" class="cta-button">Découvrir</a> -->
-          <a class="btn cta-button" href="#more">
-              <svg>
-                  <rect fill="none" height="100%" width="100%" x="0" y="0"/>
-              </svg>
-              Contact
-          </a>
-      </div>
-  </section>
-
-  <section id="more" class="content-section">
-    <div>
-      <h2>Remplissez le formulaire suivant pour nous envoyer un message</h2>
+    </nav>
+</header>
+<section class="hero">
+    <video autoplay class="video-bg" loop muted>
+        <source src="src/media/videos/hero.webm" type="video/webm"/>
+        <source src="src/media/videos/hero.mp4" type="video/mp4"/>
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div class="hero-overlay">
+        <h2 class="brand-title">Dassault Aviation</h2>
+        <h1 class="page-title">Contactez-nous</h1>
+        <p>Que vous soyez journaliste, partenaire ou membre du public, nous sommes à votre écoute.</p>
     </div>
-    <div class="rules">
-      <h4>Les champs suivient d'un astérisque (*) sont obligatoires</h4>
-    </div>
-  </section>
+</section>
 
-  <section>
-    <div class="overlay">
-      <form>
-        <div class="row">
-            <div>
-                <label for="prenom">Prénom*</label>
-                <input type="text" id="prenom" name="prenom" required>
+<section class="contact-section">
+    <div class="container">
+        <h2>Envoyez-nous un message</h2>
+        <form action="_" class="contact-form" method="post">
+            <div class="form-group">
+                <label for="name">Nom et Prénom</label>
+                <input id="name" name="name" placeholder="Votre nom complet" required type="text">
             </div>
-            <div>
-                <label for="nom">Nom*</label>
-                <input type="text" id="nom" name="nom" required>
+            <div class="form-group">
+                <label for="email">Adresse Email</label>
+                <input id="email" name="email" placeholder="Votre email" required type="email">
             </div>
+            <div class="form-group">
+                <label for="subject">Objet</label>
+                <input id="subject" name="subject" placeholder="Objet de votre message" required type="text">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre Message</label>
+                <textarea id="message" name="message" placeholder="Votre message ici..." required rows="6"></textarea>
+            </div>
+            <button class="btn submit-btn" type="submit">Envoyer</button>
+        </form>
+        <div class="contact-info">
+            <h3>Nos Coordonnées</h3>
+            <p>Email : contact@dassault-aviation.com</p>
+            <p>Téléphone : +33 (0)1 53 76 93 00</p>
+            <p>Adresse : 9, Rond-Point des Champs-Élysées-Marcel-Dassault, 75008 Paris, France</p>
+            <p>Adresse postale : 78, quai Marcel Dassault, 92552 Saint-Cloud Cedex, France</p>
         </div>
-    
-        <label for="courriel">Courriel*</label>
-        <input type="email" id="courriel" name="courriel" required>
-    
-        <label for="pays">Pays</label>
-        <select id="pays" name="pays">
-            <option value="">Sélectionner un pays</option>
-            <option value="france">France</option>
-            <option value="canada">Canada</option>
-            <option value="belgique">Belgique</option>
-            <option value="suisse">Suisse</option>
-            <option value="autre">Autre</option>
-        </select>
-    
-        <label for="sujet">Sujet*</label>
-        <input type="text" id="sujet" name="sujet" required>
-    
-        <label for="message">Message*</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-    
-        <button type="submit">Envoyer</button>
-    </form>
-        <!--<h1>Bienvenue sur le site de Dassault</h1>
-        <p>Découvrez notre histoire, nos produits et actualités</p>
-        <a href="#more" class="cta-button">En savoir plus</a>-->
+
     </div>
-  </section>
+</section>
 
-    <section id="contact-info" class="contact-section">
-      <div class="contact">
-        <h2>Informations supplémentaires</h2>
-        <p>Adresse : 123 Rue Fictive, 75000 Paris, France</p>
-        <p>Téléphone : +33 1 23 45 67 89</p>
-        <p>Email : contact@dassault.com</p>
-      </div>
-    </section>
+<script src="src/js/script.js"></script>
 
-    <script src="src/js/script.js"></script>
-    <footer>
-      <p>Copyright © 2025 Histoire d'assault</p>
-  </footer>
-  </body>
+<footer class="site-footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/histoire.html">Histoire</a></li>
+            <li><a href="/products.html">Produits</a></li>
+            <li><a href="/news.html">Actualités</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/career.html">Nous rejoindre</a></li>
+        </ul>
+        <p class="footer-copy">© 2025 Dassault Aviation. Tous droits réservés.</p>
+    </div>
+</footer>
+</body>
 </html>

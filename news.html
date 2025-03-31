@@ -1,53 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Histoire Dassault</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <!-- <div class="logo"> -->
-          <img src="src/media/img/logo.svg" class="logo" alt="Logo Dassault" />
-        <!-- </div> -->
-        <ul class="nav-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/histoire.html">Histoire</a></li>
-          <li><a href="/products.html">Produits</a></li>
-          <li><a href="/news.html">Actualités</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/career.html">Nous rejoindre</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Actualités Dassault</title>
+  <link href="src/css/style.css" rel="stylesheet"/>
+  <link href="src/css/news.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <img alt="Logo Dassault" class="logo"
+         src="https://upload.wikimedia.org/wikipedia/fr/d/d0/Logo_Dassault_Aviation_2020.svg"/>
+    <ul class="nav-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/products.html">Produits</a></li>
+      <li><a href="/news.html">Actualités</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/career.html">Nous rejoindre</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section class="hero">
-      <video autoplay muted loop class="video-bg">
-        <source src="src/media/videos/hero.webm" type="video/webm" />
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
-      <div class="hero-overlay">
-        <h1>Bienvenue sur le site de Dassault</h1>
-        <p>Découvrez notre histoire, nos produits et actualités</p>
-        <a href="#more" class="cta-button">En savoir plus</a>
+<section class="hero">
+  <video autoplay class="video-bg" loop muted>
+    <source src="src/media/videos/hero.webm" type="video/webm"/>
+    <source src="src/media/videos/hero.mp4" type="video/mp4"/>
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+  <div class="hero-overlay">
+    <h2 class="brand-title">Dassault Aviation</h2>
+    <h1 class="page-title">Les Dernières Actualités</h1>
+    <p>Découvrez nos récentes participations et distinctions, ainsi que nos engagements pour l'avenir.</p>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <h2>Nos Actualités</h2>
+    <br>
+    <hr>
+    <br>
+
+    <article class="news-item">
+      <img alt="Course du cœur 2025" class="news-img" src="src/media/img/news/DA00058047S.jpg">
+      <div class="news-content">
+        <h3>Course du cœur 2025 : le don d’organes, une cause collective</h3>
+        <span class="news-date">26.03.2025</span>
+        <p>L’édition de la Course du cœur 2025 est un nouveau succès pour la cause du don d’organes. Nos 16 coureurs et
+          coureuses ont terminé premiers parmi quatorze entreprises le 23 mars 2025.</p>
+        <a class="read-more" href="#">Lire la suite</a>
       </div>
-    </section>
+    </article>
 
-    <section id="more" class="content-section">
-      <div class="container">
-        <h2>Notre Histoire</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nemo odio
-          mollitia optio aliquid consectetur totam iusto, temporibus quia in iure veritatis...
-        </p>
+    <article class="news-item">
+      <img alt="IDEX 2025" class="news-img" src="src/media/img/news/IMG-20250219-WA0000.webp">
+      <div class="news-content">
+        <h3>IDEX 2025</h3>
+        <span class="news-date">19.02.2025</span>
+        <p>Dassault Aviation participe au salon IDEX du 17 au 21 février 2025 à Abu Dhabi, aux Émirats arabes unis.</p>
+        <a class="read-more" href="#">Lire la suite</a>
       </div>
-    </section>
+    </article>
 
-    <script src="src/js/script.js"></script>
-    <footer>
-      <p>Copyright © 2025 Histoire d'assault</p>
-  </footer>
-  </body>
+    <article class="news-item">
+      <img alt="Meilleurs employeurs IT" class="news-img" src="src/media/img/news/DA00055209_S.webp">
+      <div class="news-content">
+        <h3>Dassault Aviation dans les meilleurs employeurs 2025 des métiers IT</h3>
+        <span class="news-date">13.02.2025</span>
+        <p>Avec une note de 7,79/10, Dassault Aviation se hisse à la 2ème place dans la catégorie Aérospatial et Défense
+          et devient le 3ème Top Employeur du numérique, d’après l’enquête Pro-Conso France.</p>
+        <a class="read-more" href="#">Lire la suite</a>
+      </div>
+    </article>
+
+    <article class="news-item">
+      <img alt="Aero India 2025" class="news-img" src="src/media/img/news/aeroindia2.webp">
+      <div class="news-content">
+        <h3>Aero India 2025</h3>
+        <span class="news-date">12.02.2025</span>
+        <p>Dassault Aviation participe au Salon Aero India du 10 au 14 février 2025 à Bangalore, présentant sur son
+          stand deux maquettes en échelle 1/5ème : Rafale C Indian Air Force et Rafale M.</p>
+        <a class="read-more" href="#">Lire la suite</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<script src="src/js/script.js"></script>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/histoire.html">Histoire</a></li>
+      <li><a href="/products.html">Produits</a></li>
+      <li><a href="/news.html">Actualités</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/career.html">Nous rejoindre</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Dassault Aviation. Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
 </html>

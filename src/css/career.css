@@ -1,0 +1,149 @@
+/* Section Formulaire de Candidature */
+.application-section {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.application-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.application-section h2 {
+    font-size: 2em;
+    color: #0085cc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background: #0085cc;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #005f99;
+}
+
+/* Section Offres d'emploi */
+.job-section {
+    padding: 80px 20px;
+    background: #fff;
+    color: #333;
+}
+
+.job-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-section h2 {
+    font-size: 2em;
+    color: #0085cc;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Style des offres d'emploi en bloc */
+.job-item {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+}
+
+.job-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.job-content {
+    padding: 20px;
+}
+
+.job-content h3 {
+    font-size: 1.6em;
+    color: #0085cc;
+    margin-bottom: 10px;
+}
+
+.job-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.job-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #0085cc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #005f99;
+}
+
+/* Adaptation pour écrans larges */
+@media (min-width: 768px) {
+    .job-item {
+        flex-direction: row;
+    }
+
+    .job-img {
+        width: 40%;
+        max-height: 250px;
+    }
+
+    .job-content {
+        width: 60%;
+        padding: 20px;
+    }
+}
