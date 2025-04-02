@@ -1,126 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Carrières - Rejoignez-nous</title>
-    <link href="src/css/style.css" rel="stylesheet"/>
-    <link href="src/css/career.css" rel="stylesheet"/>
-</head>
-<body>
-<header>
-    <nav class="navbar stroke">
-        <img alt="Logo Dassault" class="logo"
-             src="https://upload.wikimedia.org/wikipedia/fr/d/d0/Logo_Dassault_Aviation_2020.svg"/>
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link href="src/css/career.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar stroke">
+        <img
+          alt="Logo Dassault"
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/fr/d/d0/Logo_Dassault_Aviation_2020.svg"
+        />
+        <button class="burger-menu" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/products.html">Produits</a></li>
-            <li><a href="/news.html">Actualités</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/career.html">Nous rejoindre</a></li>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/products.html">Produits</a></li>
+          <li><a href="/news.html">Actualités</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/career.html">Nous rejoindre</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<section class="hero">
-    <video autoplay class="video-bg" loop muted>
-        <source src="src/media/videos/recrut.webm" type="video/webm"/>
-        <source src="src/media/videos/recrut.mp4" type="video/mp4"/>
+    <section class="hero">
+      <video autoplay class="video-bg" loop muted>
+        <source src="src/media/videos/recrut.webm" type="video/webm" />
+        <source src="src/media/videos/recrut.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la vidéo.
-    </video>
-    <div class="hero-overlay-career">
+      </video>
+      <div class="hero-overlay-career">
         <h2 class="brand-title">Carrières chez Dassault</h2>
         <h1 class="page-title">Rejoignez notre équipe</h1>
         <p>Envoyez votre CV et découvrez nos offres d'emploi à la une.</p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="job-section">
-    <div class="container">
+    <section class="job-section">
+      <div class="container">
         <h2>Offres d'emploi à la une</h2>
 
         <article class="job-item">
-            <div class="job-content">
-                <a class="read-more" href="#"><h3>Ingénieur Aéronautique</h3></a>
-                <span class="job-date">Publié le 15.03.2025</span>
-                <p>Nous recherchons un ingénieur passionné par l'innovation et la conception aéronautique pour renforcer
-                    nos équipes.</p>
-                <a class="read-more" href="#">En savoir plus</a>
-            </div>
+          <div class="job-content">
+            <a class="read-more" href="#"><h3>Ingénieur Aéronautique</h3></a>
+            <span class="job-date">Publié le 15.03.2025</span>
+            <p>
+              Nous recherchons un ingénieur passionné par l'innovation et la
+              conception aéronautique pour renforcer nos équipes.
+            </p>
+            <a class="read-more" href="#">En savoir plus</a>
+          </div>
         </article>
 
         <article class="job-item">
-            <div class="job-content">
-                <a class="read-more" href="#"><h3>Spécialiste IT</h3></a>
-                <span class="job-date">Publié le 10.03.2025</span>
-                <p>Rejoignez notre département IT pour participer à la transformation numérique d'une entreprise
-                    d'exception.</p>
-                <a class="read-more" href="#">En savoir plus</a>
-            </div>
+          <div class="job-content">
+            <a class="read-more" href="#"><h3>Spécialiste IT</h3></a>
+            <span class="job-date">Publié le 10.03.2025</span>
+            <p>
+              Rejoignez notre département IT pour participer à la
+              transformation numérique d'une entreprise d'exception.
+            </p>
+            <a class="read-more" href="#">En savoir plus</a>
+          </div>
         </article>
 
         <article class="job-item">
-            <div class="job-content">
-                <a class="read-more" href="#"><h3>Assistant Administratif</h3></a>
-                <span class="job-date">Publié le 05.03.2025</span>
-                <p>Soutenez nos équipes dans leur quotidien en rejoignant notre service administratif.</p>
-                <a class="read-more" href="#">En savoir plus</a>
-            </div>
+          <div class="job-content">
+            <a class="read-more" href="#"><h3>Assistant Administratif</h3></a>
+            <span class="job-date">Publié le 05.03.2025</span>
+            <p>
+              Soutenez nos équipes dans leur quotidien en rejoignant notre
+              service administratif.
+            </p>
+            <a class="read-more" href="#">En savoir plus</a>
+          </div>
         </article>
+      </div>
+    </section>
 
-    </div>
-</section>
-
-<section class="application-section">
-    <div class="container">
+    <section class="application-section">
+      <div class="container">
         <h2>Déposez votre candidature</h2>
-        <form action="_" class="application-form" enctype="multipart/form-data" method="post">
-            <div class="form-group">
-                <label for="nom">Nom complet :</label>
-                <input id="nom" name="nom" required type="text">
-            </div>
-            <div class="form-group">
-                <label for="email">Adresse e-mail :</label>
-                <input id="email" name="email" required type="email">
-            </div>
-            <div class="form-group">
-                <label for="telephone">Téléphone :</label>
-                <input id="telephone" name="telephone" required type="tel">
-            </div>
-            <div class="form-group">
-                <label for="cv">CV (PDF) :</label>
-                <input accept=".pdf" id="cv" name="cv" required type="file">
-            </div>
-            <div class="form-group">
-                <label for="lettre">Lettre de motivation (PDF) :</label>
-                <input accept=".pdf" id="lettre" name="lettre" required type="file">
-            </div>
-            <div class="form-group">
-                <label for="message">Message / Présentation :</label>
-                <textarea id="message" name="message" placeholder="Présentez-vous et expliquez vos motivations..."
-                          required rows="5"></textarea>
-            </div>
-            <button class="btn submit-btn" type="submit">Envoyer ma candidature</button>
+        <form
+          action="_"
+          class="application-form"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <div class="form-group">
+            <label for="nom">Nom complet :</label>
+            <input id="nom" name="nom" required type="text" />
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e-mail :</label>
+            <input id="email" name="email" required type="email" />
+          </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input id="telephone" name="telephone" required type="tel" />
+          </div>
+          <div class="form-group">
+            <label for="cv">CV (PDF) :</label>
+            <input accept=".pdf" id="cv" name="cv" required type="file" />
+          </div>
+          <div class="form-group">
+            <label for="lettre">Lettre de motivation (PDF) :</label>
+            <input
+              accept=".pdf"
+              id="lettre"
+              name="lettre"
+              required
+              type="file"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Présentation :</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Présentez-vous et expliquez vos motivations..."
+              required
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="btn submit-btn" type="submit">
+            Envoyer ma candidature
+          </button>
         </form>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
 
-<footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
+      <div class="container">
         <ul class="footer-links">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/histoire.html">Histoire</a></li>
-            <li><a href="/products.html">Produits</a></li>
-            <li><a href="/news.html">Actualités</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/career.html">Nous rejoindre</a></li>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/histoire.html">Histoire</a></li>
+          <li><a href="/products.html">Produits</a></li>
+          <li><a href="/news.html">Actualités</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/career.html">Nous rejoindre</a></li>
         </ul>
-        <p class="footer-copy">© 2025 Dassault Aviation. Tous droits réservés.</p>
-    </div>
-</footer>
-
-
-</body>
+        <p class="footer-copy">
+          © 2025 Dassault Aviation. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
