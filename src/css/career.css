@@ -1,3 +1,32 @@
+.hero-overlay-career {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    top: 15%;
+    transform: translateY(-50%);
+    padding: 0 1em;
+    background-color: rgba(36, 72, 109, 0.25);
+}
+
+.hero-overlay-career h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-overlay-career p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.hero-overlay-career {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* Section Formulaire de Candidature */
 .application-section {
     padding: 80px 20px;
