@@ -226,46 +226,52 @@ p {
   margin: 0 auto; /* Centre horizontalement */
 }
 
+
+
 .products-list {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille responsive */
-  gap: 20px; /* Espacement entre les éléments */
-  justify-content: center; /* Centre les colonnes dans la grille */
-  place-items: center; /* Centre chaque élément horizontalement et verticalement */
+  gap: 20px; /* Espacement entre les cartes */
   padding: 20px;
+  justify-content: center; /* Centre les colonnes dans la grille */
 }
 
-
 .product-item {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Centre les éléments horizontalement */
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Coins arrondis pour un design moderne */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  min-height: 450px; /* Hauteur minimale pour uniformiser les cartes */
+  padding: 20px;
 }
 
 .product-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
 
 .product-img {
   width: 100%;
-  max-width: 300px; /* Limite la largeur maximale */
-  height: auto; /* Maintient le ratio d'aspect */
-  margin: 0 auto; /* Centre l'image horizontalement */
-  display: block; /* Assure un bon centrage */
-  border-bottom: 2px solid #ddd;
-  border-radius: 5px; /* Ajoute des coins arrondis */
+  max-width: 200px; /* Limite la largeur maximale */
+  height: 150px; /* Hauteur fixe pour uniformiser les images */
+  object-fit: cover; /* Maintient le ratio d'aspect */
+  border-radius: 10px; /* Coins arrondis pour les images */
+  margin-bottom: 15px; /* Espacement avec le contenu */
 }
 
 .product-content {
-  padding: 15px;
+  flex-grow: 1; /* Permet au contenu de s'étendre pour remplir l'espace */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Assure que le bouton reste en bas */
+  align-items: center;
+  padding: 10px;
 }
 
 .product-content h3 {
@@ -278,6 +284,7 @@ p {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .product-content .price {
@@ -295,16 +302,21 @@ p {
   padding: 10px 20px;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .buy-button:hover {
   background-color: #005bb5;
+  transform: scale(1.05); /* Légère mise en avant au survol */
 }
 
 @media (max-width: 768px) {
+  .product-item {
+    min-height: auto; /* Permet aux cartes de s'adapter sur les petits écrans */
+  }
+
   .product-img {
-    height: 150px;
+    height: 120px; /* Réduit la taille des images sur mobile */
   }
 
   .product-content h3 {
